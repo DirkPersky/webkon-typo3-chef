@@ -6,7 +6,7 @@ This package provides composer requirements to the default set of code
 
 ## Installation
 
-`composer require dirkPersky/webkon-typo3-chef`
+`composer require dirkpersky/webkon-typo3-chef`
 
 This will install all code that is required and will set up the document root
 with the required entry scripts.
