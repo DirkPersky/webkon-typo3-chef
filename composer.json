@@ -1,5 +1,5 @@
 {
-  "name": "web kon - Internetagentur: TYPO3 composer",
+  "name": "dirkpersky/webkon-typo3-chef",
   "description": "TYPO3 CMS Base Distribution - web kon",
   "type": "metapackage",
   "repositories": [
