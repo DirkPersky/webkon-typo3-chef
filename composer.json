@@ -1,0 +1,146 @@
+{
+  "name": "web kon - Internetagentur: TYPO3 composer",
+  "description": "TYPO3 CMS Base Distribution - web kon",
+  "type": "metapackage",
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org/" }
+  ],
+  "authors": [
+    {
+      "name": "Dirk Persky",
+      "role": "Webdeveloper",
+      "homepage": "http://dp-dvelop.de"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "require": {
+    "typo3/minimal": "^8.7",
+    "typo3/cms-beuser":"^8.7",
+    "typo3/cms-rte-ckeditor": "^8.7",
+    "typo3/cms-indexed-search": "^8.7",
+    "typo3/cms-fluid-styled-content": "^8.7",
+    "typo3/cms-filemetadata":"^8.7",
+    "typo3/cms-form": "^8.7",
+    "typo3/cms-tstemplate":"^8.7",
+    "typo3/cms-lowlevel":"^8.7",
+    "typo3/cms-rsaauth":"^8.7",
+    "helhum/typo3-console": "@stable",
+    "clickstorm/cs_seo": "@stable",
+    "dirkpersky/typo3-dp_cookieconsent": "@stable",
+    "dirkpersky/typo3-rte-ckeditor-fontawesome": "@stable",
+    "gridelementsteam/gridelements": "@stable",
+    "dmitryd/typo3-realurl": "@stable",
+    "sgalinski/scriptmerger": "@stable",
+    "lochmueller/sourceopt": "@stable",
+    "lochmueller/staticfilecache": "@stable",
+    "georgringer/news": "@stable"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "public"
+    }
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@webkon-symlink-version"
+    ],
+    "post-install-cmd": [
+      "@webkon-symlink-version"
+    ],
+    "webkon-set-base-link": [
+      "ln -sfn /storage/libraries/typo3/typo3_src/composer_8.7 typo3_src"
+    ],
+    "webkon-clear-vendor": [
+      "rm -rf vendor/cogpowered/finediff",
+
+      "rm -rf vendor/doctrine/annotations",
+      "rm -rf vendor/doctrine/cache",
+      "rm -rf vendor/doctrine/collections",
+      "rm -rf vendor/doctrine/common",
+      "rm -rf vendor/doctrine/dbal",
+      "rm -rf vendor/doctrine/inflector",
+      "rm -rf vendor/doctrine/instantiator",
+      "rm -rf vendor/doctrine/lexer",
+
+      "rm -rf vendor/guzzlehttp/guzzle",
+      "rm -rf vendor/guzzlehttp/promises",
+      "rm -rf vendor/guzzlehttp/psr7",
+
+      "rm -rf vendor/helhum/typo3-composer-setup",
+
+      "rm -rf vendor/mso/idna-convert",
+
+      "rm -rf vendor/psr/http-message",
+      "rm -rf vendor/psr/log",
+
+      "rm -rf vendor/swiftmailer/swiftmailer",
+
+      "rm -rf vendor/symfony/console",
+      "rm -rf vendor/symfony/debug",
+      "rm -rf vendor/symfony/finder",
+      "rm -rf vendor/symfony/polyfill-ctype",
+      "rm -rf vendor/symfony/polyfill-mbstring",
+      "rm -rf vendor/symfony/yaml",
+
+      "rm -rf vendor/typo3/class-alias-loader",
+      "rm -rf vendor/typo3/cms-cli",
+
+      "rm -rf vendor/typo3fluid/fluid"
+    ],
+    "webkon-link-vendor": [
+      "ln -sfn ../../typo3_src/vendor/cogpowered/finediff vendor/cogpowered/finediff",
+
+      "ln -sfn ../../typo3_src/vendor/doctrine/annotations vendor/doctrine/annotations",
+      "ln -sfn ../../typo3_src/vendor/doctrine/cache vendor/doctrine/cache",
+      "ln -sfn ../../typo3_src/vendor/doctrine/collections vendor/doctrine/collections",
+      "ln -sfn ../../typo3_src/vendor/doctrine/common vendor/doctrine/common",
+      "ln -sfn ../../typo3_src/vendor/doctrine/dbal vendor/doctrine/dbal",
+      "ln -sfn ../../typo3_src/vendor/doctrine/inflector vendor/doctrine/inflector",
+      "ln -sfn ../../typo3_src/vendor/doctrine/instantiator vendor/doctrine/instantiator",
+      "ln -sfn ../../typo3_src/vendor/doctrine/lexer vendor/doctrine/lexer",
+
+      "ln -sfn ../../typo3_src/vendor/guzzlehttp/guzzle vendor/guzzlehttp/guzzle",
+      "ln -sfn ../../typo3_src/vendor/guzzlehttp/promises vendor/guzzlehttp/promises",
+      "ln -sfn ../../typo3_src/vendor/guzzlehttp/psr7 vendor/guzzlehttp/psr7",
+
+      "ln -sfn ../../typo3_src/vendor/helhum/typo3-composer-setup vendor/helhum/typo3-composer-setup",
+
+      "ln -sfn ../../typo3_src/vendor/mso/idna-convert vendor/mso/idna-convert",
+
+      "ln -sfn ../../typo3_src/vendor/psr/http-message vendor/psr/http-message",
+      "ln -sfn ../../typo3_src/vendor/psr/log vendor/psr/log",
+
+      "ln -sfn ../../typo3_src/vendor/swiftmailer/swiftmailer vendor/swiftmailer/swiftmailer",
+
+      "ln -sfn ../../typo3_src/vendor/symfony/console vendor/symfony/console",
+      "ln -sfn ../../typo3_src/vendor/symfony/debug vendor/symfony/debug",
+      "ln -sfn ../../typo3_src/vendor/symfony/finder vendor/symfony/finder",
+      "ln -sfn ../../typo3_src/vendor/symfony/polyfill-ctype vendor/symfony/polyfill-ctype",
+      "ln -sfn ../../typo3_src/vendor/symfony/polyfill-mbstring vendor/symfony/polyfill-mbstring",
+      "ln -sfn ../../typo3_src/vendor/symfony/yaml vendor/symfony/yaml",
+
+      "ln -sfn ../../typo3_src/vendor/typo3/class-alias-loader vendor/typo3/class-alias-loader",
+      "ln -sfn ../../typo3_src/vendor/typo3/cms-cli vendor/typo3/cms-cli",
+
+      "ln -sfn ../../typo3_src/vendor/typo3fluid/fluid vendor/typo3fluid/fluid"
+    ],
+    "webkon-clear-sysext": [
+      "rm -rf public/typo3/sysext",
+      "ln -sfn ../../typo3_src/typo3/sysext public/typo3/sysext"
+    ],
+    "webkon-symlink-version": [
+      "@webkon-set-base-link",
+      "@webkon-clear-vendor",
+      "@webkon-link-vendor",
+      "@webkon-clear-sysext"
+    ],
+    "typo3-cms-scripts": [
+      "typo3cms install:fixfolderstructure",
+      "typo3cms install:generatepackagestates"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  }
+}
