@@ -3,7 +3,8 @@
   "description": "TYPO3 CMS Base Distribution - web kon",
   "type": "metapackage",
   "repositories": [
-    { "type": "composer", "url": "https://composer.typo3.org/" }
+    { "type": "composer", "url": "https://composer.typo3.org/" },
+    { "type": "vcs", "url": "git@github.com:DirkPersky/webkon-typo3-composer.git" }
   ],
   "authors": [
     {
@@ -33,7 +34,8 @@
     "sgalinski/scriptmerger": "@stable",
     "lochmueller/sourceopt": "@stable",
     "lochmueller/staticfilecache": "@stable",
-    "georgringer/news": "@stable"
+    "georgringer/news": "@stable",
+    "dirkpersky/typo3-composer" : "@stable"
   },
   "extra": {
     "typo3/cms": {
