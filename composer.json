@@ -135,7 +135,8 @@
       "@webkon-set-base-link",
       "@webkon-clear-vendor",
       "@webkon-link-vendor",
-      "@webkon-clear-sysext"
+      "@webkon-clear-sysext",
+      "DirkPersky\\Typo3Composer\\Classes\\Installer::setVersion"
     ],
     "typo3-cms-scripts": [
       "typo3cms install:fixfolderstructure",
