@@ -25,7 +25,7 @@
 		"typo3/cms-tstemplate":"^8.7",
 		"typo3/cms-lowlevel":"^8.7",
 		"typo3/cms-rsaauth":"^8.7",
-		"helhum/typo3-console": "^5.4",
+		"helhum/typo3-console": "@stable",
 		"clickstorm/cs_seo": "@stable",
 		"dirkpersky/typo3-dp_cookieconsent": "@stable",
 		"dirkpersky/typo3-rte-ckeditor-fontawesome": "@stable",
