@@ -1,7 +1,7 @@
 {
 	"name": "dirkpersky/webkon-typo3-chef",
 	"description": "TYPO3 CMS Base Distribution - web kon",
-	"type": "metapackage",
+	"type": "project",
 	"repositories": [
 		{ "type": "composer", "url": "https://composer.typo3.org/" }
 	],
