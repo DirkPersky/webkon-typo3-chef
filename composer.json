@@ -54,8 +54,8 @@
 			"DirkPersky\\Typo3Composer\\Classes\\ChefSymlink::setSymlink"
 		],
 		"typo3-cms-scripts": [
-			"typo3cms install:fixfolderstructure",
-			"typo3cms install:generatepackagestates"
+			"vendor/bin/typo3cms install:fixfolderstructure",
+			"vendor/bin/typo3cms install:generatepackagestates"
 		],
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
