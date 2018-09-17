@@ -33,8 +33,8 @@
 		"lochmueller/sourceopt": "@stable",
 		"lochmueller/staticfilecache": "@stable",
 		"georgringer/news": "@stable",
-		"dirkpersky/typo3-composer" : "@stable",
-		"in2code/powermail":"@stable"
+		"in2code/powermail":"@stable",
+		"dirkpersky/typo3-composer" : "@stable"
 	},
 	"extra": {
 		"typo3/cms": {
