@@ -20,7 +20,6 @@
 		"typo3/cms-indexed-search": "^8.7",
 		"typo3/cms-fluid-styled-content": "^8.7",
 		"typo3/cms-filemetadata":"^8.7",
-		"typo3/cms-form": "^8.7",
 		"typo3/cms-tstemplate":"^8.7",
 		"typo3/cms-lowlevel":"^8.7",
 		"typo3/cms-rsaauth":"^8.7",
@@ -34,7 +33,8 @@
 		"lochmueller/sourceopt": "@stable",
 		"lochmueller/staticfilecache": "@stable",
 		"georgringer/news": "@stable",
-		"dirkpersky/typo3-composer" : "@stable"
+		"dirkpersky/typo3-composer" : "@stable",
+		"in2code/powermail":"@stable"
 	},
 	"extra": {
 		"typo3/cms": {
