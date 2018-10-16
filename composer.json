@@ -40,7 +40,8 @@
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"web-dir": "public"
-		}
+		},
+		"chef": "/storage/libraries/typo3/typo3_src/composer_8.7"
 	},
 	"scripts": {
 		"post-update-cmd": [
@@ -60,6 +61,5 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
-	},
-	"chef": "/storage/libraries/typo3/typo3_src/composer_8.7"
+	}
 }
