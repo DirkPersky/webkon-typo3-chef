@@ -40,8 +40,7 @@
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"web-dir": "public"
-		},
-		"chef": "/storage/libraries/typo3/typo3_src/composer_8.7"
+		}
 	},
 	"scripts": {
 		"post-update-cmd": [
@@ -51,8 +50,7 @@
 			"@webkon-symlink-version"
 		],
 		"webkon-symlink-version": [
-			"DirkPersky\\Typo3Composer\\Classes\\Installer::setVersion",
-			"DirkPersky\\Typo3Composer\\Classes\\ChefSymlink::setSymlink"
+			"DirkPersky\\Typo3Composer\\Classes\\Installer::setVersion"
 		],
 		"typo3-cms-scripts": [
 			"vendor/bin/typo3cms install:fixfolderstructure",
