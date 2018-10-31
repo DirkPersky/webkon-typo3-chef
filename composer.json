@@ -50,8 +50,7 @@
 			"@webkon-symlink-version"
 		],
 		"webkon-symlink-version": [
-			"DirkPersky\\Typo3Composer\\Classes\\Installer::setVersion",
-			"DirkPersky\\Typo3Composer\\Classes\\ChefSymlink::setSymlink"
+			"DirkPersky\\Typo3Composer\\Classes\\Installer::setVersion"
 		],
 		"typo3-cms-scripts": [
 			"vendor/bin/typo3cms install:fixfolderstructure",
