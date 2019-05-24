@@ -38,7 +38,7 @@
 		"dirkpersky/typo3-dp_cookieconsent": "@stable",
 		"dirkpersky/typo3-rte-ckeditor-fontawesome": "@stable",
 		"gridelementsteam/gridelements": "@stable",
-		"sgalinski/scriptmerger": "dev-feature_UpgradeTo9LTS",
+		"sgalinski/scriptmerger": "@stable",
 		"lochmueller/sourceopt": "@dev",
 		"lochmueller/staticfilecache": "@stable",
 		"georgringer/news": "@stable",
