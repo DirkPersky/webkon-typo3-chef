@@ -39,7 +39,7 @@
 		"dirkpersky/typo3-rte-ckeditor-fontawesome": "@stable",
 		"gridelementsteam/gridelements": "@stable",
 		"sgalinski/scriptmerger": "@stable",
-		"lochmueller/sourceopt": "@stable",
+		"lochmueller/sourceopt": "@dev",
 		"lochmueller/staticfilecache": "@stable",
 		"georgringer/news": "@stable",
 		"in2code/powermail":"@stable",
