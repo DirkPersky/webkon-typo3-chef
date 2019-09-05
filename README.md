@@ -23,7 +23,5 @@ php7.2 vendor/bin/typo3cms install:setup
 
 Anpassen der `LocalConfiguration.php` damit die Webseite über DEV URL erreichbar ist, und kein fehler wirft.
 ```
-'SYS' => [
-        'trustedHostsPattern' => '.*',
-
+php7.2 vendor/bin/typo3cms configuration:set SYS/trustedHostsPattern '.*'
 ```
