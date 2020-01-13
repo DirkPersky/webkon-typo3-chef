@@ -29,11 +29,12 @@
 		"georgringer/news": "@stable",
 		"in2code/powermail":"@stable",
 		"dirkpersky/typo3-composer" : "@stable",
-
+		"fluidtypo3/vhs": "@stable",
 		"helhum/typo3-console": "@stable",
 		"clickstorm/cs_seo": "@stable",
 		"sgalinski/scriptmerger": "@stable",
 		"lochmueller/sourceopt": "@dev"
+
 	},
 	"extra": {
 		"typo3/cms": {
