@@ -43,7 +43,8 @@
 		"lochmueller/staticfilecache": "@stable",
 		"georgringer/news": "@stable",
 		"in2code/powermail":"@stable",
-		"dirkpersky/typo3-composer" : "@stable"
+		"dirkpersky/typo3-composer" : "@stable",
+		"fluidtypo3/vhs": "@stable"
 	},
 	"extra": {
 		"typo3/cms": {
