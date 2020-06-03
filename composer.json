@@ -14,13 +14,12 @@
 	],
 	"license": "GPL-2.0+",
 	"require": {
-		"typo3/cms-base-distribution": "v10.0.0",
-		"typo3/cms-indexed-search": "v10.0.0",
-		"typo3/cms-filemetadata":"@dev",
-		"typo3/cms-lowlevel":"@dev",
-		"typo3/cms-rsaauth":"@dev",
-		"typo3/cms-adminpanel": "@dev",
-		"typo3/cms-redirects": "@dev",
+		"typo3/cms-base-distribution": "^10.4",
+		"typo3/cms-indexed-search": "^10.4",
+		"typo3/cms-filemetadata":"^10.4",
+		"typo3/cms-lowlevel":"^10.4",
+		"typo3/cms-adminpanel": "^10.4",
+		"typo3/cms-redirects": "^10.4",
 
 		"dirkpersky/typo3-dp_cookieconsent": "@stable",
 		"dirkpersky/typo3-rte-ckeditor-fontawesome": "@stable",
@@ -31,10 +30,8 @@
 		"dirkpersky/typo3-composer" : "@stable",
 		"fluidtypo3/vhs": "@stable",
 		"helhum/typo3-console": "@stable",
-		"clickstorm/cs_seo": "@stable",
-		"sgalinski/scriptmerger": "@stable",
+		"clickstorm/cs_seo": "@dev",
 		"lochmueller/sourceopt": "@dev"
-
 	},
 	"extra": {
 		"typo3/cms": {
