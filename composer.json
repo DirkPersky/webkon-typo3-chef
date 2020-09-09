@@ -31,7 +31,8 @@
 		"fluidtypo3/vhs": "@stable",
 		"helhum/typo3-console": "@stable",
 		"clickstorm/cs_seo": "@dev",
-		"lochmueller/sourceopt": "@dev"
+		"lochmueller/sourceopt": "@dev",
+		"sgalinski/scriptmerger": "@dev"
 	},
 	"extra": {
 		"typo3/cms": {
