@@ -12,6 +12,7 @@
 			"homepage": "http://dp-dvelop.de"
 		}
 	],
+	"require-all": true,
 	"license": "GPL-2.0+",
 	"require": {
 		"typo3/cms-base-distribution": "^10.4",
@@ -20,19 +21,20 @@
 		"typo3/cms-lowlevel":"^10.4",
 		"typo3/cms-adminpanel": "^10.4",
 		"typo3/cms-redirects": "^10.4",
+		"typo3/cms-form": "^10.4",
 
-		"dirkpersky/typo3-dp_cookieconsent": "@stable",
-		"dirkpersky/typo3-rte-ckeditor-fontawesome": "@stable",
+		"dirkpersky/typo3-dp_cookieconsent": "dev-master",
+		"dirkpersky/typo3-rte-ckeditor-fontawesome": "dev-master",
 		"gridelementsteam/gridelements": "@stable",
-		"lochmueller/staticfilecache": "@stable",
 		"georgringer/news": "@stable",
 		"in2code/powermail":"@stable",
-		"dirkpersky/typo3-composer" : "@stable",
 		"fluidtypo3/vhs": "@stable",
 		"helhum/typo3-console": "@stable",
-		"clickstorm/cs_seo": "@dev",
+		"helhum/typoscript-rendering": "@stable",
+		"clickstorm/cs_seo": "@stable",
+		"sgalinski/scriptmerger": "@dev",
 		"lochmueller/sourceopt": "@dev",
-		"sgalinski/scriptmerger": "@dev"
+		"dirkpersky/typo3-dp_http2": "dev-master"
 	},
 	"extra": {
 		"typo3/cms": {
@@ -42,13 +44,8 @@
 	},
 	"scripts": {
 		"post-update-cmd": [
-			"@webkon-symlink-version"
 		],
 		"post-install-cmd": [
-			"@webkon-symlink-version"
-		],
-		"webkon-symlink-version": [
-			"DirkPersky\\Typo3Composer\\Classes\\Installer::setVersion"
 		],
 		"typo3-cms-scripts": [
 			"vendor/bin/typo3cms install:fixfolderstructure",
@@ -57,5 +54,10 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
+	},
+	"config": {
+		"platform": {
+			"php": "7.4.0"
+		}
 	}
 }
